@@ -279,7 +279,11 @@ function Squeenix:OnEnable()
 	MinimapZoom:EnableMouseWheel(true)
 	MinimapZoom:SetScript("OnMouseWheel", function() Squeenix:OnMouseWheel() end)
 
+##	MinimapZoneTextButton:SetPoint("CENTER", Minimap, "CENTER", -10, 83)
+##	MinimapZoneTextButton:SetScript("OnClick", ToggleMinimap)
 
+##	MinimapZoneText:SetPoint("TOP", MinimapZoneTextButton,"TOP",9,1)
+##	MiniMapTrackingFrame:SetPoint("TOPLEFT", Minimap,"TOPLEFT",0,-2)
 
 	MinimapToggleButton:Hide()
 	MinimapZoomIn:Hide()
